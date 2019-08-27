@@ -1,0 +1,14 @@
+uuid: 1a5db8b6-4ab2-49a6-a23a-9d1efe2175c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.meeting_minutes
+  module:
+    - user
+id: user_add_role_action.meeting_minutes
+label: 'Add the meeting minutes role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: meeting_minutes

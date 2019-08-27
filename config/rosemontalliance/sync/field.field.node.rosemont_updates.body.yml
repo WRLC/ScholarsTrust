@@ -1,0 +1,22 @@
+uuid: 6ba8df06-e8b8-4179-b402-b160936195dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.rosemont_updates
+  module:
+    - text
+id: node.rosemont_updates.body
+field_name: body
+entity_type: node
+bundle: rosemont_updates
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

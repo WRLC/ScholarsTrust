@@ -1,0 +1,50 @@
+uuid: 3f37cde1-409c-40b0-ade8-decd6012a4c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_rosemont_updates.default
+    - field.field.node.rosemont_updates.body
+    - field.field.node.rosemont_updates.comment_node_rosemont_updates
+    - field.field.node.rosemont_updates.field_file
+    - node.type.rosemont_updates
+  module:
+    - comment
+    - file
+    - text
+    - user
+id: node.rosemont_updates.default
+targetEntityType: node
+bundle: rosemont_updates
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_rosemont_updates:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_file:
+    label: above
+    weight: 1
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: 0203e63a-9fca-47b6-9af8-3e24a6edd88e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0197166f-7708-41bb-916c-6cfbd5fdf6d9'
+  module:
+    - block_content
+    - system
+  theme:
+    - nexus
+id: nexus_block_1
+theme: nexus
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:0197166f-7708-41bb-916c-6cfbd5fdf6d9'
+settings:
+  id: 'block_content:0197166f-7708-41bb-916c-6cfbd5fdf6d9'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\n/about-us"

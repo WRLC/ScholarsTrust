@@ -1,0 +1,20 @@
+uuid: ff0ca6b0-60b2-4174-8e20-fdd4786c6fe6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - adminimal
+id: adminimal_system_powered_by
+theme: adminimal
+region: ''
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

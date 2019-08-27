@@ -1,0 +1,36 @@
+uuid: b87eab2e-b43e-4394-99ce-09748800e55a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.meeting_notes.body
+    - field.field.node.meeting_notes.comment_node_meeting_notes
+    - field.field.node.meeting_notes.field_file
+    - field.field.node.meeting_notes.field_tags
+    - node.type.meeting_notes
+  module:
+    - text
+    - user
+id: node.meeting_notes.teaser
+targetEntityType: node
+bundle: meeting_notes
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_meeting_notes: true
+  field_file: true
+  field_tags: true

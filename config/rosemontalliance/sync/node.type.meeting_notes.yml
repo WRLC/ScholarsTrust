@@ -1,0 +1,18 @@
+uuid: c08214d0-b0a8-4db1-8443-7de05f4c13cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:423:'
+name: 'Meeting Notes'
+type: meeting_notes
+description: 'Upload meeting notes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

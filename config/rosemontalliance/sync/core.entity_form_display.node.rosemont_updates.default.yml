@@ -1,0 +1,85 @@
+uuid: 3a1bf734-6f62-4895-90c8-d6d84f2a0aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rosemont_updates.body
+    - field.field.node.rosemont_updates.comment_node_rosemont_updates
+    - field.field.node.rosemont_updates.field_file
+    - node.type.rosemont_updates
+  module:
+    - comment
+    - path
+    - text
+id: node.rosemont_updates.default
+targetEntityType: node
+bundle: rosemont_updates
+mode: default
+content:
+  body:
+    weight: 31
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  comment_node_rosemont_updates:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_file: true

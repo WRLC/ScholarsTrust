@@ -1,0 +1,18 @@
+uuid: d2e4a57f-1352-4cd3-994c-3dfc39cdc160
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.meeting_notes
+id: node.meeting_notes.title
+field_name: title
+entity_type: node
+bundle: meeting_notes
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

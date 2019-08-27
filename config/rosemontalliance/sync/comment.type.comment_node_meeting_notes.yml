@@ -1,0 +1,8 @@
+uuid: 778442dd-eeb1-4f46-a5fc-297680cf33b0
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_meeting_notes
+label: 'Meeting Notes comment'
+target_entity_type_id: node
+description: null

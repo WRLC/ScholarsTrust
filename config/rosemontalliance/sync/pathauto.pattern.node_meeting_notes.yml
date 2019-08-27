@@ -1,0 +1,21 @@
+uuid: 1d364ece-2c62-4032-9bda-484a516186fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_meeting_notes
+label: 'Content - Meeting Notes'
+type: 'canonical_entities:node'
+pattern: '/meeting-notes/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      meeting_notes: meeting_notes
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

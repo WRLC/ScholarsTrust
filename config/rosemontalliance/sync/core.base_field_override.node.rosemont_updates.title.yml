@@ -1,0 +1,18 @@
+uuid: d6d313de-e9da-4713-a5f8-1fc8d8736c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rosemont_updates
+id: node.rosemont_updates.title
+field_name: title
+entity_type: node
+bundle: rosemont_updates
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

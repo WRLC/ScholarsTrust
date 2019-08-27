@@ -1,0 +1,22 @@
+uuid: 994fc76c-a7cd-4c02-bed6-35233628b195
+langcode: en
+status: true
+dependencies: {  }
+id: meeting_minutes
+label: 'meeting minutes'
+weight: 3
+is_admin: null
+permissions:
+  - 'bulk upload media'
+  - 'create meeting_notes content'
+  - 'create rosemont_updates content'
+  - 'delete any rosemont_updates content'
+  - 'delete own meeting_notes content'
+  - 'delete own rosemont_updates content'
+  - 'edit any meeting_notes content'
+  - 'edit any rosemont_updates content'
+  - 'edit own meeting_notes content'
+  - 'edit own rosemont_updates content'
+  - 'search content'
+  - 'use advanced search'
+  - 'use text format full_html'

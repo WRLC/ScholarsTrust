@@ -1,0 +1,14 @@
+uuid: b7ca413f-7743-4c3a-8db3-e041fe7a51d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.meeting_minutes
+  module:
+    - user
+id: user_remove_role_action.meeting_minutes
+label: 'Remove the meeting minutes role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: meeting_minutes

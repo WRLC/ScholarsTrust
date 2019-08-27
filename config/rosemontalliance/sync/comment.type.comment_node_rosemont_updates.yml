@@ -1,0 +1,8 @@
+uuid: 169e9fab-4698-4d72-a8af-6825cd69f91a
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_rosemont_updates
+label: 'Rosemont Updates comment'
+target_entity_type_id: node
+description: null

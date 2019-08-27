@@ -1,0 +1,20 @@
+uuid: 2e30c401-402e-43cf-a2b0-446ef46ddf55
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - wrlc_hq
+id: wrlc_hq_system_main
+theme: wrlc_hq
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

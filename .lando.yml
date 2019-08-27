@@ -1,0 +1,13 @@
+name: st8
+recipe: drupal8
+config:
+  webroot: web
+proxy:
+  appserver:
+    - st8.lndo.site
+    - ra8.lndo.site
+services:
+  rosemont_db:
+    type: mariadb:10.1
+  rosemont7:
+    type: mariadb:10.1

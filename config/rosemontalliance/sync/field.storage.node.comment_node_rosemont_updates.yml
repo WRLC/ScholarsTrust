@@ -1,0 +1,20 @@
+uuid: 16a8ad0f-4d8f-4a55-a792-4f3cd39d606d
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_rosemont_updates
+field_name: comment_node_rosemont_updates
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_rosemont_updates
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

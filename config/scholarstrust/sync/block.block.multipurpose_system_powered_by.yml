@@ -1,0 +1,20 @@
+uuid: 3f5b5d64-2436-4c37-9bee-46286ebcdd25
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - multipurpose
+id: multipurpose_system_powered_by
+theme: multipurpose
+region: ''
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

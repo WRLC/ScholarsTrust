@@ -1,0 +1,27 @@
+uuid: c1851aac-0b50-41e4-a819-9044b91dd6f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.meeting_notes
+  module:
+    - file
+id: node.meeting_notes.field_file
+field_name: field_file
+entity_type: node
+bundle: meeting_notes
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'txt png gif jpg jpeg doc docx xsl xslx pdf'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
