@@ -9,5 +9,3 @@ proxy:
 services:
   rosemont_db:
     type: mariadb:10.1
-  rosemont7:
-    type: mariadb:10.1
