@@ -7,7 +7,9 @@ logo:
   use_default: 0
   path: 'public://rosemont-logo-horizontal-2.png'
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://rosemont-logo-square.png'
+  mimetype: image/png
 show_breadcrumbs: 1
 slideshow_display: 0
 slide1_head: 'Sample product'
