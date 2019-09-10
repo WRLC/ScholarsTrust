@@ -11,8 +11,8 @@ dependencies:
     - scholars_trust_theme
 id: scholars_trust_theme_scholarstrust_block_4
 theme: scholars_trust_theme
-region: content
-weight: -3
+region: footer_second
+weight: -6
 provider: null
 plugin: 'block_content:0b61e879-8353-436f-bd70-1071cf709fc3'
 settings:
