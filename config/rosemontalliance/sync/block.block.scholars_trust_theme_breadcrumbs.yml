@@ -1,0 +1,22 @@
+uuid: 2a1ee1cd-1c16-421a-ae1a-1307aeb45a4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - scholars_trust_theme
+_core:
+  default_config_hash: NQr0oD4xpdVUQYKiNIOzCtjpyeCQYCgNi1a4on8lyC0
+id: scholars_trust_theme_breadcrumbs
+theme: scholars_trust_theme
+region: highlighted
+weight: 50
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
