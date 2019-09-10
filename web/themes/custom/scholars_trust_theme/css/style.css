@@ -68,8 +68,9 @@ img {border: none;}
 }
 
 .fcred {
-  padding: 10px 0;
-  color: #606060;
+  text-align: center;
+  padding: 10px 0 !important;
+  color: #606060 !important;
 }
 .site-header {border-bottom: 1px solid silver;}
 
