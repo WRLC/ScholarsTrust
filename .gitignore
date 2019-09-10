@@ -67,3 +67,7 @@ web/modules/contrib/devel/
 
 # Local Keys #
 /keys
+
+# Drush Aliases #
+/drush/sites/st8.site.yml
+/drush/sites/ra8.site.yml
