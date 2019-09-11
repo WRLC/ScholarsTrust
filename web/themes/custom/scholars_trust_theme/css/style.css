@@ -33,7 +33,23 @@ tr.even {
   border-top: 1px solid silver !important;
 }
 
-#main-menu li a:hover, #main-menu li a:active, #main-menu a.active, #main-menu > ul > li > a.active-trail {
+#main-menu li span {
+  color: #777;
+  display: block;
+  margin: 0;
+  padding: 19px 10px 19px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+#main-menu li a:hover,
+#main-menu li a:active,
+#main-menu a.active,
+#main-menu > ul > li > a.active-trail,
+#main-menu li span:hover,
+#main-menu li span:active,
+#main-menu span.active,
+#main-menu > ul > li > span.active-trail {
   color: #bd3525;
 }
 
@@ -47,7 +63,7 @@ tr.even {
 
 img {border: none;}
 
-#primary table {
+#primary #content table {
   margin: 0 0 1.5em;
   width: 100%;
   border: 0 solid #ddd;
@@ -55,7 +71,7 @@ img {border: none;}
   background: #fff;
 }
 
-#primary td {
+#primary #content td {
   padding: 5px 10px;
   border-top: 0 solid #ddd;
   border-right: 0 solid #ddd;

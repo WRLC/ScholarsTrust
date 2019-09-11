@@ -1,4 +1,3 @@
-uuid: 2b494dcd-e673-43c3-bb78-569d62ff345b
 langcode: en
 status: true
 dependencies:
@@ -14,3 +13,5 @@ filters:
     status: true
     weight: 0
     settings: {  }
+roles:
+  - administrator

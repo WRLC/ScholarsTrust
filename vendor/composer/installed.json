@@ -3565,6 +3565,75 @@
         }
     },
     {
+        "name": "drupal/menu_breadcrumb",
+        "version": "1.11.0",
+        "version_normalized": "1.11.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/menu_breadcrumb.git",
+            "reference": "8.x-1.11"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.11.zip",
+            "reference": "8.x-1.11",
+            "shasum": "8a867303e9c66be3d7cf54ba2be73919f3c880e4"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.11",
+                "datestamp": "1567506484",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "RyanPrice",
+                "homepage": "https://www.drupal.org/user/873848"
+            },
+            {
+                "name": "aaron",
+                "homepage": "https://www.drupal.org/user/33420"
+            },
+            {
+                "name": "gdevlugt",
+                "homepage": "https://www.drupal.org/user/167273"
+            },
+            {
+                "name": "rphair",
+                "homepage": "https://www.drupal.org/user/3196607"
+            },
+            {
+                "name": "vaibhavjain",
+                "homepage": "https://www.drupal.org/user/1159692"
+            },
+            {
+                "name": "xurizaemon",
+                "homepage": "https://www.drupal.org/user/76026"
+            }
+        ],
+        "description": "Create breadcrumbs from nested menu titles and/or taxonomy membership.",
+        "homepage": "https://www.drupal.org/project/menu_breadcrumb",
+        "support": {
+            "source": "https://git.drupalcode.org/project/menu_breadcrumb"
+        }
+    },
+    {
         "name": "drupal/nexus",
         "version": "1.4.0",
         "version_normalized": "1.4.0.0",
@@ -3690,6 +3759,88 @@
         "homepage": "https://www.drupal.org/project/pathauto",
         "support": {
             "source": "https://git.drupalcode.org/project/pathauto"
+        }
+    },
+    {
+        "name": "drupal/php",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/php.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/php-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "e5d505af52c31e24b2f8bd307aa3e78ef486a52c"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1529156625",
+                "security-coverage": {
+                    "status": "revoked",
+                    "message": "Project has been unsupported by the Drupal Security Team"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "hass",
+                "homepage": "https://www.drupal.org/u/hass"
+            },
+            {
+                "name": "See other contributors",
+                "homepage": "https://www.drupal.org/node/1633456/committers"
+            },
+            {
+                "name": "catch",
+                "homepage": "https://www.drupal.org/user/35733"
+            },
+            {
+                "name": "dixon_",
+                "homepage": "https://www.drupal.org/user/239911"
+            },
+            {
+                "name": "greggles",
+                "homepage": "https://www.drupal.org/user/36762"
+            },
+            {
+                "name": "hass",
+                "homepage": "https://www.drupal.org/user/85918"
+            },
+            {
+                "name": "msonnabaum",
+                "homepage": "https://www.drupal.org/user/75278"
+            },
+            {
+                "name": "quicksketch",
+                "homepage": "https://www.drupal.org/user/35821"
+            },
+            {
+                "name": "webchick",
+                "homepage": "https://www.drupal.org/user/24967"
+            }
+        ],
+        "description": "Allows embedded PHP code/snippets to be evaluated. Enabling this can cause security and performance issues as it allows users to execute PHP code on your site.",
+        "homepage": "https://www.drupal.org/project/php",
+        "support": {
+            "source": "http://git.drupal.org/project/php.git",
+            "issues": "https://www.drupal.org/project/issues/php"
         }
     },
     {
