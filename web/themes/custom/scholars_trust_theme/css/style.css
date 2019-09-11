@@ -33,6 +33,12 @@ tr.even {
   border-top: 1px solid silver !important;
 }
 
+#navigation #main-menu nav > ul > li:nth-child(2) > span:after,
+#navigation #main-menu nav > ul > li:nth-child(3) > span:after {
+  content: ' »';
+  color: #777;
+}
+
 #navigation #main-menu li a,
 #navigation #main-menu li span {
   color: #777;
@@ -43,15 +49,27 @@ tr.even {
   position: relative;
 }
 
-#main-menu li a:hover,
-#main-menu li a:active,
-#main-menu a.active,
-#main-menu > ul > li > a.active-trail,
-#main-menu li span:hover,
-#main-menu li span:active,
-#main-menu span.active,
-#main-menu > ul > li > span.active-trail {
+#navigation #main-menu li a:hover,
+#navigation #main-menu li a:active,
+#navigation #main-menu a.active,
+#navigation #main-menu > ul > li > a.active-trail,
+#navigation #main-menu li span:hover,
+#navigation #main-menu li span:active,
+#navigation #main-menu span.active,
+#navigation #main-menu > ul > li > span.active-trail {
   color: #bd3525;
+}
+#breadcrumbs .breadcrumb > li {
+  color: #f4473a;
+}
+
+#breadcrumbs .breadcrumb > li:last-child a {
+  color: #545454;
+  cursor: default;
+}
+
+#breadcrumbs .breadcrumb > li + li::before {
+  color: #545454;
 }
 
 .page-node #content-wrap img {
