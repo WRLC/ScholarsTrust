@@ -11,7 +11,7 @@ _core:
 id: scholars_trust_theme_page_title
 theme: scholars_trust_theme
 region: content_top
-weight: -50
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

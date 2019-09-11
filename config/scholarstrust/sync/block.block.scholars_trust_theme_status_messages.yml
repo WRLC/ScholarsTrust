@@ -11,7 +11,7 @@ _core:
 id: scholars_trust_theme_status_messages
 theme: scholars_trust_theme
 region: highlighted
-weight: 60
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:
