@@ -6,10 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:423:'
-name: 'Rosemont Updates'
+    available_menus: {  }
+    parent: ''
+name: 'Program Updates'
 type: rosemont_updates
 description: 'Use this content type to submit content for the "Rosemont Updates" page.  Created May 2019.  Past submissions will be listed on an archived page.'
 help: ''

@@ -10,8 +10,8 @@ _core:
   default_config_hash: NQr0oD4xpdVUQYKiNIOzCtjpyeCQYCgNi1a4on8lyC0
 id: scholars_trust_theme_breadcrumbs
 theme: scholars_trust_theme
-region: highlighted
-weight: 50
+region: content_top
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

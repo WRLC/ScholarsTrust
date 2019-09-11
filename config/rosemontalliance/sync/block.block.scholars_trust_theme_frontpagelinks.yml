@@ -12,7 +12,7 @@ dependencies:
 id: scholars_trust_theme_frontpagelinks
 theme: scholars_trust_theme
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:bf81f735-0293-4f86-be03-fb677643c26c'
 settings:
