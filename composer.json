@@ -35,7 +35,7 @@
         "drupal/plupload": "^1.0@beta",
         "drupal/token": "^1.5",
         "drush/drush": "^9.0.0",
-        "tomboone/d8-scripts": "dev-master",
+        "tomboone/d8-scripts": "^0.1",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",

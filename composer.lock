@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d478afbebe0dfd7726e777a5b39f848b",
+    "content-hash": "23a536467cefc6b42576cb18a6bbbab1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6646,16 +6646,16 @@
         },
         {
             "name": "tomboone/d8-scripts",
-            "version": "dev-master",
+            "version": "0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomboone/d8-scripts.git",
-                "reference": "03c37e4ea13c81007936cbe79af234221a5a067d"
+                "reference": "6c88e60a03ecf790acd3b31398184f1c5ebd0af6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomboone/d8-scripts/zipball/03c37e4ea13c81007936cbe79af234221a5a067d",
-                "reference": "03c37e4ea13c81007936cbe79af234221a5a067d",
+                "url": "https://api.github.com/repos/tomboone/d8-scripts/zipball/6c88e60a03ecf790acd3b31398184f1c5ebd0af6",
+                "reference": "6c88e60a03ecf790acd3b31398184f1c5ebd0af6",
                 "shasum": ""
             },
             "require": {
@@ -6668,7 +6668,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Custom scripts for Drupal 8 automation",
-            "time": "2019-10-01T20:33:12+00:00"
+            "time": "2019-10-01T20:51:49+00:00"
         },
         {
             "name": "twig/twig",
@@ -9470,8 +9470,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/libraries": 15,
-        "drupal/plupload": 10,
-        "tomboone/d8-scripts": 20
+        "drupal/plupload": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
