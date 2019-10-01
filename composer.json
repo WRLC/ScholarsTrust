@@ -35,6 +35,7 @@
         "drupal/plupload": "^1.0@beta",
         "drupal/token": "^1.5",
         "drush/drush": "^9.0.0",
+        "tomboone/d8-scripts": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -82,7 +83,8 @@
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+            "drush/Commands/{$name}": ["type:drupal-drush"],
+            "scripts/{$name}": ["type:drupal-script"]
         },
         "drupal-scaffold": {
             "initial": {
