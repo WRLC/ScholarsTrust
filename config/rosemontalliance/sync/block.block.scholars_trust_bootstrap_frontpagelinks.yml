@@ -1,0 +1,31 @@
+uuid: 88099664-688b-49ec-ad59-a7d561ebe950
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf81f735-0293-4f86-be03-fb677643c26c'
+  module:
+    - block_content
+    - system
+  theme:
+    - scholars_trust_bootstrap
+id: scholars_trust_bootstrap_frontpagelinks
+theme: scholars_trust_bootstrap
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:bf81f735-0293-4f86-be03-fb677643c26c'
+settings:
+  id: 'block_content:bf81f735-0293-4f86-be03-fb677643c26c'
+  label: 'Front Page Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

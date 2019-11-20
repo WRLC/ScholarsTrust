@@ -1,0 +1,30 @@
+uuid: 9b18d0ff-c7fe-42f4-b15a-ce3b81ede206
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6af1b768-434e-419c-9408-c10470bf8861'
+  module:
+    - block_content
+    - system
+  theme:
+    - scholars_trust_bootstrap
+id: scholars_trust_bootstrap_scholarstrust_block_1
+theme: scholars_trust_bootstrap
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:6af1b768-434e-419c-9408-c10470bf8861'
+settings:
+  id: 'block_content:6af1b768-434e-419c-9408-c10470bf8861'
+  label: 'Welcome to Scholars Trust'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
