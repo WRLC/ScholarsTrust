@@ -1,0 +1,25 @@
+uuid: 8ccb90d2-a009-4c94-bff1-aa0d23db14bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0c60d8bb-b238-4573-b3f6-eb9c0456db39'
+  module:
+    - block_content
+  theme:
+    - scholars_trust_bootstrap
+id: stfooterinformation
+theme: scholars_trust_bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:0c60d8bb-b238-4573-b3f6-eb9c0456db39'
+settings:
+  id: 'block_content:0c60d8bb-b238-4573-b3f6-eb9c0456db39'
+  label: 'ST Footer Information'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
