@@ -1,0 +1,17 @@
+uuid: 94a4552b-c6b5-420d-a871-04bc4300aacd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: rosemont_front_page_css
+label: 'Rosemont Front Page CSS'
+code: ".page-header {\r\n    padding-bottom: 0;\r\n    margin: 0;\r\n    border-bottom: 0px solid #eeeeee;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+conditions_require_all: true
