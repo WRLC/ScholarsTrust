@@ -1,145 +1,160 @@
-# Composer template for Drupal projects
+# Scholars Trust and Rosemont Shared Print Alliance
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
 
-This project template provides a starter kit for managing your site
-dependencies with [Composer](https://getcomposer.org/).
+This repo powers the [Scholars Trust](https://scholarstrust.org/) and [Rosemont Shared Print Alliance](https://rosemontsharedprintalliance.org/) websites.
 
-If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/8.x/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+## Local development
 
-## Usage
+Local development/maintenance is performed using [Lando](https://docs.devwithlando.io/), a Docker-based utility for creating containerized stacks for web application development.
 
-First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
+This repository contains a Lando configuration file using the Drupal 8 recipe (with PHP 7.0 to match the production server), so there is no need to initialize a Lando project. You just need to install Lando on your machine.
 
-> Note: The instructions below refer to the [global composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar) 
-for your setup.
+To deploy the sites to your local machine:<br />
+(The commands below assume you are developing in macOS with the shared WRLC Common drive mounted at `/Volumes/Common`.)
 
-After that you can create the project:
+1. Clone the repository:<br />
+`git clone git@github.com:WRLC/liblists.git`
 
-```
-composer create-project drupal-composer/drupal-project:8.x-dev some-dir --no-interaction
-```
+1. Start Lando:<br />
+`lando start`
 
-With `composer require ...` you can download new dependencies to your 
-installation.
+### Deploy Scholars Trust
+1. Copy the Scholars Trust database dump file from the Common drive to your local machine:<br />
+`cp /Volumes/Common/lando/scholarstrust/scholarstrust.sql .`
 
-```
-cd some-dir
-composer require drupal/devel:~1.0
-```
+1. Import the database backup into Lando:<br />
+`lando db-import scholarstrust.sql`
 
-The `composer create-project` command passes ownership of all files to the 
-project that is created. You should create a new git repository, and commit 
-all files not excluded by the .gitignore file.
+1. Copy the site's local settings file from the Common drive to your local machine:<br />
+`cp /Volumes/Common/lando/scholarstrust/settings.local.php web/sites/default/settings.local.php`
 
-## What does the template do?
+1. Copy the site's `files` folder from the Common drive to your local machine:<br />
+`cp -r /Volumes/Common/lando/scholarstrust/files web/sites/default/files`
 
-When installing the given `composer.json` some tasks are taken care of:
+A working copy of the production site should now be available on your local machine at: https://st8.lndo.site
 
-* Drupal will be installed in the `web`-directory.
-* Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
-* Creates default writable versions of `settings.php` and `services.yml`.
-* Creates `web/sites/default/files`-directory.
-* Latest version of drush is installed locally for use at `vendor/bin/drush`.
-* Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
-* Creates environment variables based on your .env file. See [.env.example](.env.example).
+### Deploy Rosemont Shared Print Alliance
+1. Copy the Rosemont database dump file from the Common drive to your local machine:<br />
+`cp /Volumes/Common/lando/rosemont/rosemont.sql .`
 
-## Updating Drupal Core
+1. Import the database backup into Lando:<br />
+`lando db-import rosemont.sql --host rosemont_db`
 
-This project will attempt to keep all of your Drupal Core files up-to-date; the 
-project [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) 
-is used to ensure that your scaffold files are updated every time drupal/core is 
-updated. If you customize any of the "scaffolding" files (commonly .htaccess), 
-you may need to merge conflicts if any of your modified files are updated in a 
-new release of Drupal core.
+1. Copy the site's local settings file from the Common drive to your local machine:<br />
+`cp /Volumes/Common/lando/rosemont/settings.local.php web/sites/wrlc.rosemont.org/settings.local.php`
 
-Follow the steps below to update your core files.
+1. Copy the site's `files` folder from the Common drive to your local machine:<br />
+`cp -r /Volumes/Common/lando/rosemont/files web/sites/rosemont.wrlc.org/files`
 
-1. Run `composer update drupal/core webflo/drupal-core-require-dev "symfony/*" --with-dependencies` to update Drupal Core and its dependencies.
-1. Run `git diff` to determine if any of the scaffolding files have changed. 
-   Review the files for any changes and restore any customizations to 
-  `.htaccess` or `robots.txt`.
-1. Commit everything all together in a single commit, so `web` will remain in
-   sync with the `core` when checking out branches or running `git bisect`.
-1. In the event that there are non-trivial conflicts in step 2, you may wish 
-   to perform these steps on a branch, and use `git merge` to combine the 
-   updated core files with your customized files. This facilitates the use 
-   of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple; 
-   keeping all of your modifications at the beginning or end of the file is a 
-   good strategy to keep merges easy.
+A working copy of the production site should now be available on your local machine at: https://ra8.lndo.site
 
-## Generate composer.json from existing project
+## Updating files folder and database dump in Common and local environment
 
-With using [the "Composer Generate" drush extension](https://www.drupal.org/project/composer_generate)
-you can now generate a basic `composer.json` file from an existing project. Note
-that the generated `composer.json` might differ from this project's file.
+When working on your local copy of the site, it's a good idea to sync the site `files` folder and database with the production site on a regular basis.
 
+Updating this data on the WRLC shared Common drive makes the updated data available to other developers, too.
 
-## FAQ
+### Sync Files
 
-### Should I commit the contrib modules I download?
+#### Scholars Trust
 
-Composer recommends **no**. They provide [argumentation against but also 
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
+To sync files, first copy the `sites/default/files` folder on the production server to `/Volumes/Common/lando/scholarstrust/files` (overwriting the existing `files` folder).
 
-### Should I commit the scaffolding files?
+Then copy the files to your local installation:<br />
+`rm -r web/sites/default/files`<br />
+`cp -r /Volumes/Common/lando/scholarstrust/files web/sites/default/files`
 
-The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the web/ directory of your project. If you have not customized those files you could choose
-to not check them into your version control system (e.g. git). If that is the case for your project it might be
-convenient to automatically run the drupal-scaffold plugin after every install or update of your project. You can
-achieve that by registering `@composer drupal:scaffold` as post-install and post-update command in your composer.json:
+#### Rosemont Shared Print Alliance
 
-```json
-"scripts": {
-    "post-install-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ]
-},
-```
-### How can I apply patches to downloaded modules?
+To sync files, first copy the `sites/default/files` folder on the production server to `/Volumes/Common/lando/rosemont/files` (overwriting the existing `files` folder).
 
-If you need to apply patches (depending on the project being modified, a pull 
-request is often a better solution), you can do so with the 
-[composer-patches](https://github.com/cweagans/composer-patches) plugin.
+Then copy the files to your local installation:<br />
+`rm -r web/sites/rosemont.wrlc.org/files`<br />
+`cp -r /Volumes/Common/lando/rosemont/files web/sites/rosemont.wrlc.org/files`
 
-To add a patch to drupal module foobar insert the patches section in the extra 
-section of composer.json:
-```json
-"extra": {
-    "patches": {
-        "drupal/foobar": {
-            "Patch description": "URL or local path to patch"
-        }
-    }
-}
-```
-### How do I switch from packagist.drupal-composer.org to packages.drupal.org?
+### Sync Database
 
-Follow the instructions in the [documentation on drupal.org](https://www.drupal.org/docs/develop/using-composer/using-packagesdrupalorg).
+#### Scholars Trust
 
-### How do I specify a PHP version ?
+To sync the database, first get an sql-dump file from the production server:<br />
+`drush sql-dump > ~/scholarstrust.sql`
 
-This project supports PHP 5.6 as minimum version (see [Drupal 8 PHP requirements](https://www.drupal.org/docs/8/system-requirements/drupal-8-php-requirements)), however it's possible that a `composer update` will upgrade some package that will then require PHP 7+.
+Then copy that dump file to `/Volumes/Common/lando/scholarstrust/scholarstrust.sql` (again overwriting the existing file).
 
-To prevent this you can add this code to specify the PHP version you want to use in the `config` section of `composer.json`:
-```json
-"config": {
-    "sort-packages": true,
-    "platform": {
-        "php": "5.6.40"
-    }
-},
-```
+Finally, import the database dump into your local copy of the site:<br />
+`cp /Volumes/Common/lando/scholarstrust/scholarstrust.sql .`<br />
+`lando db-import scholarstrust.sql`
+
+#### Rosemont Shared Print Alliance
+
+To sync the database, first get an sql-dump file from the production server:<br />
+`drush sql-dump > ~/rosemont.sql`
+
+Then copy that dump file to `/Volumes/Common/lando/rosemont/rosemont.sql` (again overwriting the existing file).
+
+Finally, import the database dump into your local copy of the site:<br />
+`cp /Volumes/Common/lando/rosemont/rosemont.sql .`<br />
+`lando db-import rosemont.sql --host rosemont_db`
+
+## Updating Drupal core and contrib modules/themes
+
+Updating Drupal core and any contrib modules or themes should always be performed in a local dev environment for testing, then pushed to Github, and pulled to production.
+
+Before installing updates, make sure you are on the master branch of the site's Git repository and run a `git pull` to make sure you have the latest commits to that branch.
+
+### Update script
+
+The site's includes a shell script that streamlines the update workflow. To install updates, run the following command in your local Lando dev environment:<br />
+`vendor/tomboone/d8-scripts/updates.sh`
+
+#### Start Lando?
+
+The script first asks if you want to start Lando. If the Lando site is already running, you don't need to start it here.
+
+#### Create update branch?
+
+Next, it will ask if you want to create an update branch in Git. Answer yes ('y').
+
+#### Machine name to update?
+
+The script with then ask for the machine name of the module/theme you wish to update. If you want to update Drupal core*, type in `core` here.
+
+Otherwise, enter the machine name of the module/theme to update.
+
+(The machine name will contain only lowercase letters and underscores. When in doubt, check the URL of the module's project page on Drupal.org or its folder name in `web/modules/contrib`.)
+
+*Sometimes Drupal core will not update even when there is an available update. When this happens, enter the following as the machine name: `core webflo/drupal-core-require-dev`.
+
+As Drupal installs the update, it will also run any required database updates on your local site.
+
+#### Commit to Git repo?
+
+The script will then ask if you wish commit the update to Git. Answer yes ('y'). This automatically adds a commit comment indicating which module/theme was updated.
+
+#### Update another module?
+
+The script will ask for the machine name of the next module/theme you wish to update. If you have more updates, to install, enter the machine name and the update process above will repeat.
+
+If you are finished installing updates, hit Return/Enter without typing a module name, and the script will exit.
+
+### Push updates to Git
+
+Once finished running local updates, test your local site to make sure none of the updates broke anything.
+
+If everything works as expected, you can push the update branch to Github. The name of the update branch will be based upon the current date: `update/yyyy-mm-dd`. So updates performed on March 17, 2019, will have a branch name of `update/2019-03-17`. This branch will not be in Github yet, so when pushing you must specify an upstream remote and branch:<br />
+`git push -u origin feature/2019-03-17`
+
+### Deploying updates to production server
+
+In the Github.com repo, create a Pull Request to merge the updates from your update branch to master.
+
+Assuming there are no conflicts, you can immediately approve the pull request and merge it into master.
+
+On the production server, navigate to the root of the site repository and run the following commands:<br />
+`sudo git pull`<br />
+`sudo chown -R www-data:www-data ../scholarstrust`<br />
+`drush updb`<br />
+`drush updb --uri=rosemontsharedprintalliance.org`
+
+Then test the production sites to make sure everything is working as expected.
