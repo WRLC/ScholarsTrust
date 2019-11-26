@@ -1,0 +1,30 @@
+uuid: 98bc19b3-144b-4b5d-ac6f-581784cef6cb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34bee99a-00fc-4d64-add6-dc953092e835'
+  module:
+    - block_content
+    - system
+  theme:
+    - scholars_trust_bootstrap
+id: scholars_trust_bootstrap_scholarstrust_block_2
+theme: scholars_trust_bootstrap
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:34bee99a-00fc-4d64-add6-dc953092e835'
+settings:
+  id: 'block_content:34bee99a-00fc-4d64-add6-dc953092e835'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /current-reports

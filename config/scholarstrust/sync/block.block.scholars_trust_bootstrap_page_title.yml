@@ -1,0 +1,27 @@
+uuid: 4fdabcf0-d09e-4230-9e05-331b7e812a42
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - scholars_trust_bootstrap
+_core:
+  default_config_hash: _TaW9xs_AMZ323Xy33YJyVAYEBMy5JH_hOmlJbzgNnM
+id: scholars_trust_bootstrap_page_title
+theme: scholars_trust_bootstrap
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+uuid: 421c0f5a-a69b-453e-8680-b61be714b635
+langcode: en
+status: true
+dependencies:
+  theme:
+    - scholars_trust_bootstrap
+_core:
+  default_config_hash: _TaW9xs_AMZ323Xy33YJyVAYEBMy5JH_hOmlJbzgNnM
+id: scholars_trust_bootstrap_page_title
+theme: scholars_trust_bootstrap
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

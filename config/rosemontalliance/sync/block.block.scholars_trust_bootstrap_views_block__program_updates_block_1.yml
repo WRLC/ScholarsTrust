@@ -1,0 +1,30 @@
+uuid: 3e2a3753-c071-4aef-92c1-c0764f12c1c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.program_updates
+  module:
+    - system
+    - views
+  theme:
+    - scholars_trust_bootstrap
+id: scholars_trust_bootstrap_views_block__program_updates_block_1
+theme: scholars_trust_bootstrap
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:program_updates-block_1'
+settings:
+  id: 'views_block:program_updates-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /program-updates
+    negate: false
+    context_mapping: {  }

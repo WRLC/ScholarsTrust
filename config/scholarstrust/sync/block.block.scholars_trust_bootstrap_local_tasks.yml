@@ -1,0 +1,22 @@
+uuid: 41d89008-1911-4763-8263-f0dea53f0149
+langcode: en
+status: true
+dependencies:
+  theme:
+    - scholars_trust_bootstrap
+_core:
+  default_config_hash: WP75ZQbROrW2UhKukrbjizRFzKkjtpVYs1DWS8bL8oA
+id: scholars_trust_bootstrap_local_tasks
+theme: scholars_trust_bootstrap
+region: help
+weight: 30
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

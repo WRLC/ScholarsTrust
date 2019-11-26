@@ -1,0 +1,30 @@
+uuid: 71e33b75-ad97-41b2-9b88-f107f631e0ea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b61e879-8353-436f-bd70-1071cf709fc3'
+  module:
+    - block_content
+    - system
+  theme:
+    - scholars_trust_bootstrap
+id: scholars_trust_bootstrap_scholarstrust_block_4
+theme: scholars_trust_bootstrap
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:0b61e879-8353-436f-bd70-1071cf709fc3'
+settings:
+  id: 'block_content:0b61e879-8353-436f-bd70-1071cf709fc3'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\n/contact-us"

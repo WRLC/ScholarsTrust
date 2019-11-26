@@ -1,0 +1,25 @@
+schemas:
+  bootstrap: 8000
+  scholars_trust_bootstrap: 8000
+favicon:
+  mimetype: image/png
+  path: 'public://scholars-trust-round_0.png'
+  url: 'https://st8.lndo.site/themes/custom/scholars_trust_bootstrap/favicon.ico'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://scholars-trust-web_0.png'
+  url: ''
+  use_default: false
+table_responsive: '-1'
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''

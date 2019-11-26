@@ -1,0 +1,22 @@
+uuid: 5b71196a-5b81-4a5d-94ca-e1d09042bf48
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - scholars_trust_bootstrap
+_core:
+  default_config_hash: CtLvpFsy_cj9upvydBuL1MKWm_nNWR64KDi8AOH8_WY
+id: scholars_trust_bootstrap_status_messages
+theme: scholars_trust_bootstrap
+region: highlighted
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

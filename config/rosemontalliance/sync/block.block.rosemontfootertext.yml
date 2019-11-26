@@ -1,0 +1,25 @@
+uuid: 08aebb91-4df2-4621-ae46-34a5f5ff4a8c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:206282d6-8fbe-4539-8bc0-4c402dbb58b5'
+  module:
+    - block_content
+  theme:
+    - scholars_trust_bootstrap
+id: rosemontfootertext
+theme: scholars_trust_bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:206282d6-8fbe-4539-8bc0-4c402dbb58b5'
+settings:
+  id: 'block_content:206282d6-8fbe-4539-8bc0-4c402dbb58b5'
+  label: 'Rosemont Footer Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

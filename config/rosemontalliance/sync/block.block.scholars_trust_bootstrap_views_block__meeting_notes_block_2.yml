@@ -1,0 +1,30 @@
+uuid: ad38a12b-860d-4766-a88c-ca4e847bf75a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.meeting_notes
+  module:
+    - system
+    - views
+  theme:
+    - scholars_trust_bootstrap
+id: scholars_trust_bootstrap_views_block__meeting_notes_block_2
+theme: scholars_trust_bootstrap
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:meeting_notes-block_2'
+settings:
+  id: 'views_block:meeting_notes-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /archived-updates
+    negate: false
+    context_mapping: {  }

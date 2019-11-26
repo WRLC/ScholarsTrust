@@ -1,0 +1,22 @@
+uuid: 81d66bb8-def8-4dfd-a9c3-3c9d10ddc0b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - scholars_trust_bootstrap
+_core:
+  default_config_hash: s_aYY5hLMsr1NWYy58YvgJ_E8n2civYXbvKYrvJbA_4
+id: scholars_trust_bootstrap_system_main
+theme: scholars_trust_bootstrap
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

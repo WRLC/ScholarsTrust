@@ -1,0 +1,11 @@
+uuid: 1ee09bf7-decb-49c0-94e3-857def18ccc9
+langcode: en
+status: true
+dependencies: {  }
+id: scholarstrust
+label: ScholarsTrust
+code: "@media (min-width: 768px) {\r\n.navbar-nav {\r\n    float: right;\r\n    /* margin: 0; */\r\n}\r\n.dropdown {\r\n    position: relative;\r\n    margin:15px 10px 0 0;\r\n    color: #777;\r\n}\r\n}\r\n@media (max-width: 767px) {\r\n.collapse.in {\r\n    display: block;\r\n    background-color: #f5f5f5;\r\n    font-size: 20px;\r\n}\r\n\r\n.dropdown {\r\n    position: relative;\r\n    margin: 0 10px 0 15px;\r\n    color: #777;\r\n    \r\n    \r\n}\r\n}\r\n\r\n\r\n.navbar-default, .navbar {\r\n    background-color: #ffffff;\r\n    border-bottom: 1px solid #e7e7e7;\r\n    border-radius:0;\r\n    border-top-color: #ffffff;\r\n    border-left-color: #ffffff;\r\n    border-right-color: #ffffff;\r\n}\r\n\r\n.navbar-default img {\r\n    max-width:300px;\r\n}\r\n\r\n.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {\r\n    color: #fff;\r\n    text-decoration: none;\r\n    background-color: #c53420;\r\n    outline: 0;\r\n}\r\n\r\n.st-footer {background-color:#f5f5f5; padding:20px; border-radius:4px;}\r\n"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true
