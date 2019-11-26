@@ -89,7 +89,7 @@ Finally, import the database dump into your local copy of the site:<br />
 #### Rosemont Shared Print Alliance
 
 To sync the database, first get an sql-dump file from the production server:<br />
-`drush sql-dump > ~/rosemont.sql`
+`drush sql-dump > ~/rosemont.sql --uri=rosemontsharedprintalliance.org`
 
 Then copy that dump file to `/Volumes/Common/lando/rosemont/rosemont.sql` (again overwriting the existing file).
 
