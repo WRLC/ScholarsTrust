@@ -2650,18 +2650,18 @@
     },
     {
         "name": "drupal/asset_injector",
-        "version": "2.4.0",
-        "version_normalized": "2.4.0.0",
+        "version": "2.6.0",
+        "version_normalized": "2.6.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/asset_injector.git",
-            "reference": "8.x-2.4"
+            "reference": "8.x-2.6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.4.zip",
-            "reference": "8.x-2.4",
-            "shasum": "c377e8aa7ff9a0fcb180586173540450f22c93bc"
+            "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.6.zip",
+            "reference": "8.x-2.6",
+            "shasum": "e861e46740c264b9313e7a52878e789f11af5ec2"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -2672,8 +2672,8 @@
                 "dev-2.x": "2.x-dev"
             },
             "drupal": {
-                "version": "8.x-2.4",
-                "datestamp": "1540573084",
+                "version": "8.x-2.6",
+                "datestamp": "1575588784",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -3820,18 +3820,18 @@
     },
     {
         "name": "drupal/pathauto",
-        "version": "1.5.0",
-        "version_normalized": "1.5.0.0",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/pathauto.git",
-            "reference": "8.x-1.5"
+            "reference": "8.x-1.6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.5.zip",
-            "reference": "8.x-1.5",
-            "shasum": "ae3c13f26d625e63da3b13dc64016888eca519c7"
+            "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "eb976ae110d73c06fafb1b657adb967dd2cb8246"
         },
         "require": {
             "drupal/core": "^8.6",
@@ -3844,8 +3844,8 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.5",
-                "datestamp": "1570828084",
+                "version": "8.x-1.6",
+                "datestamp": "1575467285",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -8107,17 +8107,17 @@
     },
     {
         "name": "symfony/http-foundation",
-        "version": "v3.4.33",
-        "version_normalized": "3.4.33.0",
+        "version": "v3.4.36",
+        "version_normalized": "3.4.36.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-foundation.git",
-            "reference": "7b4626ab40d8562707e6d1c9a6fab977a86c2037"
+            "reference": "d2d0cfe8e319d9df44c4cca570710fcf221d4593"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/7b4626ab40d8562707e6d1c9a6fab977a86c2037",
-            "reference": "7b4626ab40d8562707e6d1c9a6fab977a86c2037",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/d2d0cfe8e319d9df44c4cca570710fcf221d4593",
+            "reference": "d2d0cfe8e319d9df44c4cca570710fcf221d4593",
             "shasum": ""
         },
         "require": {
@@ -8128,7 +8128,7 @@
         "require-dev": {
             "symfony/expression-language": "~2.8|~3.0|~4.0"
         },
-        "time": "2019-10-24T15:33:53+00:00",
+        "time": "2019-11-28T12:52:59+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -8442,17 +8442,17 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.12.0",
-        "version_normalized": "1.12.0.0",
+        "version": "v1.13.1",
+        "version_normalized": "1.13.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17"
+            "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/b42a2f66e8f1b15ccf25652c3424265923eb4f17",
-            "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7b4aab9743c30be783b73de055d24a39cf4b954f",
+            "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f",
             "shasum": ""
         },
         "require": {
@@ -8461,11 +8461,11 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2019-08-06T08:03:45+00:00",
+        "time": "2019-11-27T14:18:11+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.12-dev"
+                "dev-master": "1.13-dev"
             }
         },
         "installation-source": "dist",
@@ -8503,28 +8503,28 @@
     },
     {
         "name": "symfony/polyfill-php70",
-        "version": "v1.12.0",
-        "version_normalized": "1.12.0.0",
+        "version": "v1.13.1",
+        "version_normalized": "1.13.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php70.git",
-            "reference": "54b4c428a0054e254223797d2713c31e08610831"
+            "reference": "af23c7bb26a73b850840823662dda371484926c4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/54b4c428a0054e254223797d2713c31e08610831",
-            "reference": "54b4c428a0054e254223797d2713c31e08610831",
+            "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/af23c7bb26a73b850840823662dda371484926c4",
+            "reference": "af23c7bb26a73b850840823662dda371484926c4",
             "shasum": ""
         },
         "require": {
             "paragonie/random_compat": "~1.0|~2.0|~9.99",
             "php": ">=5.3.3"
         },
-        "time": "2019-08-06T08:03:45+00:00",
+        "time": "2019-11-27T13:56:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.12-dev"
+                "dev-master": "1.13-dev"
             }
         },
         "installation-source": "dist",
@@ -9471,7 +9471,8 @@
         "license": [
             "GPL-2.0-or-later"
         ],
-        "description": "require-dev dependencies from drupal/core"
+        "description": "require-dev dependencies from drupal/core",
+        "abandoned": "drupal/core-dev"
     },
     {
         "name": "webflo/drupal-finder",
