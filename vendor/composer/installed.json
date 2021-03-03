@@ -2863,27 +2863,30 @@
     },
     {
         "name": "drupal/admin_toolbar",
-        "version": "2.4.0",
-        "version_normalized": "2.4.0.0",
+        "version": "3.0.0",
+        "version_normalized": "3.0.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-            "reference": "8.x-2.4"
+            "reference": "3.0.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.zip",
-            "reference": "8.x-2.4",
-            "shasum": "6240047b8d91ac78f98d861ba8282af971fa0b38"
+            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.0.0.zip",
+            "reference": "3.0.0",
+            "shasum": "204f7a0e8b62a8a54256142cf38ca139739fb65c"
         },
         "require": {
             "drupal/core": "^8.8.0 || ^9.0"
         },
+        "require-dev": {
+            "drupal/admin_toolbar_tools": "*"
+        },
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-2.4",
-                "datestamp": "1601999178",
+                "version": "3.0.0",
+                "datestamp": "1611311186",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -3195,6 +3198,65 @@
             "phpcs",
             "standards"
         ]
+    },
+    {
+        "name": "drupal/composer_deploy",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/composer_deploy.git",
+            "reference": "8.x-1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/composer_deploy-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "95a61636e315d6f6920572513449349f6573db8a"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9",
+            "webflo/drupal-finder": "^1.2"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.6",
+                "datestamp": "1606256659",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "jhedstrom",
+                "homepage": "https://www.drupal.org/user/208732"
+            },
+            {
+                "name": "joelpittet",
+                "homepage": "https://www.drupal.org/user/160302"
+            },
+            {
+                "name": "nerdstein",
+                "homepage": "https://www.drupal.org/user/1557710"
+            },
+            {
+                "name": "webflo",
+                "homepage": "https://www.drupal.org/user/254778"
+            }
+        ],
+        "description": "Provide version number from composers lockfile.",
+        "homepage": "https://www.drupal.org/project/composer_deploy",
+        "support": {
+            "source": "https://git.drupalcode.org/project/composer_deploy"
+        }
     },
     {
         "name": "drupal/console",
@@ -3837,33 +3899,30 @@
     },
     {
         "name": "drupal/draggableviews",
-        "version": "1.2.0",
-        "version_normalized": "1.2.0.0",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/draggableviews.git",
-            "reference": "8.x-1.2"
+            "reference": "2.0.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/draggableviews-8.x-1.2.zip",
-            "reference": "8.x-1.2",
-            "shasum": "0f5e9195ceec209552aa50f8ce3c230692c284db"
+            "url": "https://ftp.drupal.org/files/projects/draggableviews-2.0.0.zip",
+            "reference": "2.0.0",
+            "shasum": "3796f0e478c8119dcd10e1d114c5fcf4492b8a1c"
         },
         "require": {
-            "drupal/core": "*"
+            "drupal/core": "^8 || ^9"
         },
         "require-dev": {
             "drupal/draggableviews_demo": "*"
         },
         "type": "drupal-module",
         "extra": {
-            "branch-alias": {
-                "dev-1.x": "1.x-dev"
-            },
             "drupal": {
-                "version": "8.x-1.2",
-                "datestamp": "1541518680",
+                "version": "2.0.0",
+                "datestamp": "1592329896",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -4049,19 +4108,89 @@
         }
     },
     {
-        "name": "drupal/google_analytics",
-        "version": "2.5.0",
-        "version_normalized": "2.5.0.0",
+        "name": "drupal/git_deploy",
+        "version": "2.3.0",
+        "version_normalized": "2.3.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupalcode.org/project/google_analytics.git",
-            "reference": "8.x-2.5"
+            "url": "https://git.drupalcode.org/project/git_deploy.git",
+            "reference": "8.x-2.3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.5.zip",
-            "reference": "8.x-2.5",
-            "shasum": "9e0ff72cc313bf9295fe8bd73a68f5f7688513ab"
+            "url": "https://ftp.drupal.org/files/projects/git_deploy-8.x-2.3.zip",
+            "reference": "8.x-2.3",
+            "shasum": "8700e26589fbab7901914bd7a7b0679fc5cc23d5"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-2.3",
+                "datestamp": "1590187994",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Darren Oh",
+                "homepage": "https://www.drupal.org/user/30772"
+            },
+            {
+                "name": "Freso",
+                "homepage": "https://www.drupal.org/user/27504"
+            },
+            {
+                "name": "Gábor Hojtsy",
+                "homepage": "https://www.drupal.org/user/4166"
+            },
+            {
+                "name": "chx",
+                "homepage": "https://www.drupal.org/user/9446"
+            },
+            {
+                "name": "halstead",
+                "homepage": "https://www.drupal.org/user/301087"
+            },
+            {
+                "name": "mikey_p",
+                "homepage": "https://www.drupal.org/user/62496"
+            },
+            {
+                "name": "sdboyer",
+                "homepage": "https://www.drupal.org/user/146719"
+            }
+        ],
+        "description": "Helps sites that are deployed directly from Git repositories.",
+        "homepage": "https://www.drupal.org/project/git_deploy",
+        "support": {
+            "source": "https://git.drupalcode.org/project/git_deploy"
+        }
+    },
+    {
+        "name": "drupal/google_analytics",
+        "version": "3.1.0",
+        "version_normalized": "3.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/google_analytics.git",
+            "reference": "8.x-3.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-3.1.zip",
+            "reference": "8.x-3.1",
+            "shasum": "171dcac5a67cde66201754baaa52711f45e47a3b"
         },
         "require": {
             "drupal/core": "^8.8.6|^9.0"
@@ -4072,8 +4201,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-2.5",
-                "datestamp": "1591298527",
+                "version": "8.x-3.1",
+                "datestamp": "1591298584",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -10997,12 +11126,12 @@
         "version_normalized": "1.9.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/webmozart/assert.git",
+            "url": "https://github.com/webmozarts/assert.git",
             "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+            "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
             "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
             "shasum": ""
         },
