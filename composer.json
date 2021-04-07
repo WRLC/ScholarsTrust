@@ -26,7 +26,6 @@
         "drupal/asset_injector": "^2.4",
         "drupal/bootstrap": "^3.20",
         "drupal/composer_deploy": "^1.6",
-        "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
         "drupal/draggableviews": "^2.0",
         "drupal/entity": "^1.0",
