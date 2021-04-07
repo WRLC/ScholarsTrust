@@ -32,7 +32,7 @@
         "drupal/fontawesome": "^2.14",
         "drupal/git_deploy": "^2.3",
         "drupal/google_analytics": "^3.0",
-        "drupal/libraries": "^3.0@alpha",
+        "drupal/libraries": "^3.0@beta",
         "drupal/menu_breadcrumb": "^1.11",
         "drupal/nexus": "^1.4",
         "drupal/pathauto": "^1.4",
